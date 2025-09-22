@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Mi web</title>
+    <meta name="Descripcion" content="DEscripcion leida en google por el usuario">
+    <meta name="keywords" content="palabra clave con la que se encuentra en google">
+    <meta name="autor" content="Dev92FerFlores">
+
+    <!--Open Graph para redes sociales-->
+    <title>The Rock (1996)</title>
+    <meta property="og:title" content="The Rock" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+
+    <!--Liga alternativa para Pagina en otro idioma-->
+    <link rel="alternate" href="https://mi-web.com/en/">
+    <link rel="icon" href="/images/icon-mi-web.png" type="image/png">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+</header>
+<body>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Pagina Web</title>
+        <h1>Google es Genial</h1>
+        <nav>
+            <ul>
+                <il><a href="index.html">Inicio</a></il>
+                <il><a href="index.html">Acerca de</a></il>
+                <il><a href="evento.html">Eventos</a></il>
+                <il><a href="multimedia.html">multimedia</a></il>
+            </ul>
+        </nav>
+    </head>
+
+    <section>
+        <h2>Registrate a Nuestro Proximo evento</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam explicabo ut quia corporis omnis itaque delectus tenetur repellendus! Magni, iste?
+        </p>
+
+        <form action="/index.html" method="get">
+            <fieldset>
+                <legend>Registrate</legend>
+                <label for="#">Edad: <input type="text" name="edad" id="edad" required min="18" max="70"></label>
+                
+                <label for="#">Nombre: <input type="text" name="nombre" id="nombre" required minlength="3" maxlength="20"></label>
+                
+                <label for="#">Correo: <input type="text" name="correo" id="correo" required></label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Genero</legend>
+                <label for="#">Hombre
+                    <input type="checkbox" name="genero" id="Hombre" value="Hombre" required>
+                </label>
+
+                <label for="#">Mujer
+                    <input type="checkbox" name="genero" id="Mujer" value="Mujer" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Eventos</legend>
+                <label for="#">Selecciona el Evento</label>
+                <section name="evento" id="evento">
+                    <option value="null"></option>
+                    <option value="conferencia_tec">Conferencia Tecnologia</option>
+                    <option value="null">Webinar sobre SEO</option>
+                    <option value="Cloud">Taller sobre Cloud Computing</option>
+                </section> 
+            </fieldset>
+
+        <fieldset>
+            <legend>Ciudades de eventos</legend>
+            <label for="ciudad">Ciudad: </label>
+            <input list="Ciudades" id="Ciudad" name="ciudad" required>
+            <datalist id="ciudades">
+                <option value="Madrid">
+                <option value="Barcelona">
+                <option value="Valencia">
+                <option value="Sevilla">
+                <option value="Bilbao">
+            </datalist>
+        </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <Section>
+        <h2>Mas informacion sobre los Eventos</h2>
+
+        <details>
+            <summary>Conferencia Tecnologica</summary>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia libero distinctio sit sapiente magnam! Nesciunt cumque facilis debitis quos animi est dolorum laboriosam reprehenderit corporis.</p>
+                <ui>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, saepe!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, sapiente!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ducimus.</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, atque.</li>
+                </ui>
+            </div>
+            
+        </details>
+        <details>
+            <Summary>Webinar sobre SEO</Summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia libero distinctio sit sapiente magnam! Nesciunt cumque facilis debitis quos animi est dolorum laboriosam reprehenderit corporis.</p>
+        
+        </details>
+        <details>
+            <Summary>Taller sobre Cloud Computing</Summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia libero distinctio sit sapiente magnam! Nesciunt cumque facilis debitis quos animi est dolorum laboriosam reprehenderit corporis.</p>
+        
+        </details>
+    </Section>
+</body>
+</html>
